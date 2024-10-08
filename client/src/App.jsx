@@ -1,11 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home, About, Dashboard, Projects, SignIn, Signup } from "./pages";
 import Header from "./components/Header";
+import FooterComp from "./components/Footer";
 
 export default function App() {
   return (
     <BrowserRouter>
-    <Header/>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/projects" element={<Projects />} />
       </Routes>
+      <FooterComp />
     </BrowserRouter>
   );
 }
