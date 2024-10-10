@@ -76,9 +76,11 @@ export default function Header() {
             <Dropdown.Item onClick={handleSignOut}>Sign Out</Dropdown.Item>
           </Dropdown>
         ) : (
-          <Button to="/sign-in" gradientDuoTone="purpleToBlue" outline>
+          <Link to="/sign-in">
+          <Button  gradientDuoTone="purpleToBlue" outline>
             Sign In
           </Button>
+          </Link>
         )}
 
         <Navbar.Toggle />
